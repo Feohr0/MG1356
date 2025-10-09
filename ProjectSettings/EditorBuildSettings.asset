@@ -6,8 +6,16 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
-  m_configObjects:
-    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+    path: Assets/Scenes/MainMenu.unity
+    guid: 160f2a9a57ed7dd4397ae17a71c12c6b
+  - enabled: 1
+    path: Assets/Scenes/FirstMaze.unity
+    guid: 45fa88096010b1e4dbc5135f2a67de3f
+  - enabled: 1
+    path: Assets/Scenes/SecondMAze.unity
+    guid: bfcb9cdcc31e5154a99d3939517cdee7
+  - enabled: 1
+    path: Assets/Scenes/ThirdMaze.unity
+    guid: 0edd4ea67791d5f4f98f2ee96d43f695
+  m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
