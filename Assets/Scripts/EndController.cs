@@ -12,17 +12,19 @@ public class EndController : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (SceneManager.GetActiveScene().name==("FirstMaze"))
-        {
-            SceneManager.LoadScene("SecondMaze");
-        }
-        if (SceneManager.GetActiveScene().name==("SecondMaze"))
-        {
-            SceneManager.LoadScene("ThirdMaze");
-        }
-        if (SceneManager.GetActiveScene().name==("ThirdMaze"))
-        {
+        if (other != null && other.CompareTag("Player")) {
+            if (SceneManager.GetActiveScene().name == ("FirstMaze"))
+            {
+                SceneManager.LoadScene("SecondMaze");
+            }
+            if (SceneManager.GetActiveScene().name == ("SecondMaze"))
+            {
+                SceneManager.LoadScene("ThirdMaze");
+            }
+            if (SceneManager.GetActiveScene().name == ("ThirdMaze"))
+            {
 
+            }
         }
     }
 }

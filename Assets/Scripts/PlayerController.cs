@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(CharacterController))]
 public class PlayerMovement : MonoBehaviour
@@ -9,7 +10,8 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Kamera Ayarları")]
     public Transform cameraTransform;
-    public float mouseSensitivity = 100f;
+    public float mouseSensitivity = 100;
+    
 
     private CharacterController controller;
     private float currentSpeed;
@@ -19,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
     {
         controller = GetComponent<CharacterController>();
         currentSpeed = walkSpeed;
-
+        
         // Fare imlecini gizle ve ortala
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
@@ -27,6 +29,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        PlayerPrefs.SetFloat("currentSensitivity", mouseSensitivity);
         // 🔁 Fare hareketi ile kamera dönüşü
         float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
         float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;

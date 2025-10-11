@@ -7,10 +7,11 @@ public class MenuController : MonoBehaviour
     public Button[] buttons;
     public GameObject settingsPanel;
     public GameObject mainPanel;
+    GameManager gameManager;
 
-  
     private void Start()
     {
+        
         ButtonFunctions();
         mainPanel.SetActive(true);
         settingsPanel.SetActive(false);
@@ -19,18 +20,19 @@ public class MenuController : MonoBehaviour
     {
         mainPanel.SetActive(false);
         settingsPanel.SetActive(true);
-        
+
     }
-    public void SettingsClosed()
+    void Playbutton()
     {
-        settingsPanel.SetActive(false);
-        mainPanel.SetActive(true);
+        SceneManager.LoadScene("FirstMaze");
+        gameManager.timer = 0;
     }
     public void ButtonFunctions()
     {
-        buttons[0].onClick.AddListener(() => SceneManager.LoadScene("FirstMaze"));
+        buttons[0].onClick.AddListener(() => Playbutton());
         buttons[1].onClick.AddListener(() => SettingsPanel());
         buttons[2].onClick.AddListener(() => Application.Quit());
-        buttons[3].onClick.AddListener(() => SettingsClosed());
+
     }
+   
 }

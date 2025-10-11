@@ -10,11 +10,12 @@ TagManager:
   - Room
   - SenderTMP
   - Timer
+  - PauseMenu
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - wall
   - Water
   - UI
   - 

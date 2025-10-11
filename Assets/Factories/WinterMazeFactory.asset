@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2d87fe8285316043902347a68437a5b, type: 3}
+  m_Name: WinterMazeFactory
+  m_EditorClassIdentifier: 
+  WintermazePrefab: {fileID: 6459578200902964258, guid: b4eb4e98302e33346be1b915a261ae4a, type: 3}
