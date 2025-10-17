@@ -11,6 +11,8 @@ TagManager:
   - SenderTMP
   - Timer
   - PauseMenu
+  - EnemySpawn
+  - finalTimerText
   layers:
   - Default
   - TransparentFX

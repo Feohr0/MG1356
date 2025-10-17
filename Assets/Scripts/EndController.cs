@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class EndController : MonoBehaviour
 {
     public GameObject end1;
-
+    GameManager gameManager;
     private void Start()
     {
         SceneManager.GetActiveScene();
@@ -23,7 +23,10 @@ public class EndController : MonoBehaviour
             }
             if (SceneManager.GetActiveScene().name == ("ThirdMaze"))
             {
-
+                if (GameManager.Instance != null)
+                {
+                    GameManager.Instance.GameWon();
+                }
             }
         }
     }

@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/FirstMaze.unity
     guid: 45fa88096010b1e4dbc5135f2a67de3f
   - enabled: 1
-    path: Assets/Scenes/SecondMAze.unity
+    path: Assets/Scenes/SecondMaze.unity
     guid: bfcb9cdcc31e5154a99d3939517cdee7
   - enabled: 1
     path: Assets/Scenes/ThirdMaze.unity

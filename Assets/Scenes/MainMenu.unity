@@ -148,6 +148,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a96be81a84d339e4fa28b6fdb49a1a85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clickSound: {fileID: 8300000, guid: 1e7a587164fcbef45b40536469e6c432, type: 3}
+  bgMusic: {fileID: 8300000, guid: 3f0e2c1545d221c4cba0a65101ed019d, type: 3}
 --- !u!4 &170953416
 Transform:
   m_ObjectHideFlags: 0
@@ -554,6 +556,18 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2814881177878240142, guid: f465b338bafa67f45aa63fb793800bc4, type: 3}
     - target: {fileID: 2237889270602396863, guid: a7c3878680839e34ea6261debf781a65, type: 3}
+      propertyPath: desertFactory
+      value: 
+      objectReference: {fileID: 11400000, guid: e55277e7fecc0444fb82276c9ec6d31e, type: 2}
+    - target: {fileID: 2237889270602396863, guid: a7c3878680839e34ea6261debf781a65, type: 3}
+      propertyPath: forestFactory
+      value: 
+      objectReference: {fileID: 11400000, guid: b18b9a98f78d545408e78f96880dad94, type: 2}
+    - target: {fileID: 2237889270602396863, guid: a7c3878680839e34ea6261debf781a65, type: 3}
+      propertyPath: winterFactory
+      value: 
+      objectReference: {fileID: 11400000, guid: e3d16f5885540de448114c357a3255be, type: 2}
+    - target: {fileID: 2237889270602396863, guid: a7c3878680839e34ea6261debf781a65, type: 3}
       propertyPath: desertMazePrefab
       value: 
       objectReference: {fileID: 3186625697245598853, guid: 4e3af94efcfe07548843149a4a47a263, type: 3}
@@ -565,6 +579,22 @@ PrefabInstance:
       propertyPath: winterMazePrefab
       value: 
       objectReference: {fileID: 6459578200902964258, guid: b4eb4e98302e33346be1b915a261ae4a, type: 3}
+    - target: {fileID: 2237889270602396863, guid: a7c3878680839e34ea6261debf781a65, type: 3}
+      propertyPath: enemyPrefabs.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237889270602396863, guid: a7c3878680839e34ea6261debf781a65, type: 3}
+      propertyPath: 'enemyPrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: -2668195230670137389, guid: f9794e575fe27c04c94ea7b7e46f30c7, type: 3}
+    - target: {fileID: 2237889270602396863, guid: a7c3878680839e34ea6261debf781a65, type: 3}
+      propertyPath: 'enemyPrefabs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2799432310019669873, guid: 98cdaf2be96d3884b80822e77f01f879, type: 3}
+    - target: {fileID: 2237889270602396863, guid: a7c3878680839e34ea6261debf781a65, type: 3}
+      propertyPath: 'enemyPrefabs.Array.data[2]'
+      value: 
+      objectReference: {fileID: 5292912510534434163, guid: 2d0223df0490db444a14a97d721d473c, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
