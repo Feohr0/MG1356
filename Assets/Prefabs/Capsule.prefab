@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7747703257534244247}
   - component: {fileID: 7281734998142504606}
   - component: {fileID: 5290882163951284844}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Capsule
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -31,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.36263096, y: 0.56613946, z: 0.36263096}
+  m_LocalScale: {x: 0.36263096, y: 0.3833217, z: 0.36263096}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1485783334319720383}
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f19872982f6ecb48b2d2c1ecbf5ca9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 1.3
+  walkSpeed: 4
   runSpeed: 1.7
   cameraTransform: {fileID: 1485783334319720383}
   mouseSensitivity: 200
@@ -165,7 +165,6 @@ GameObject:
   - component: {fileID: 1485783334319720383}
   - component: {fileID: 8861881460620513965}
   - component: {fileID: 1556488466763468912}
-  - component: {fileID: 7280902807083915238}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -247,15 +246,3 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3501734019768689850}
   m_Enabled: 1
---- !u!114 &7280902807083915238
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3501734019768689850}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 414d36a856016ec4d8df751f6c18045c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

@@ -361,7 +361,7 @@ public class GameManager : MonoBehaviour
         if (isWon) return;
         isWon = true;
         isCounting = false;
-        Time.timeScale = 0f;
+        
 
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
