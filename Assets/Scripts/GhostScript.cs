@@ -77,7 +77,7 @@ public class DusmanAI : MonoBehaviour
     {
 
         // Player'ı bul
-
+        gezinmeHizi = 2f;
         GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
 
         if (playerObj != null)
