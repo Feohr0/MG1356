@@ -1023,6 +1023,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3191752799465781112, guid: e2013b3455f8a094490da7a350164246, type: 3}
     - target: {fileID: 2237889270602396863, guid: a7c3878680839e34ea6261debf781a65, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237889270602396863, guid: a7c3878680839e34ea6261debf781a65, type: 3}
       propertyPath: knifePrefab
       value: 
       objectReference: {fileID: 4476872116252809321, guid: 11ebb80f2082a6d479940b20f7420b3f, type: 3}
@@ -1492,7 +1496,7 @@ RectTransform:
   m_GameObject: {fileID: 1732858838}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 18.943747, y: 11.454855, z: 10.413505}
+  m_LocalScale: {x: 20.78508, y: 12.568267, z: 11.425697}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1014462319}
