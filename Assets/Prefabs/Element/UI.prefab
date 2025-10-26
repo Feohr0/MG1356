@@ -621,7 +621,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1198853618128479380}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.19548, y: 0.19548, z: 0.19548}
   m_ConstrainProportionsScale: 0
@@ -630,7 +630,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -277, y: 0}
+  m_AnchoredPosition: {x: -277.00003, y: 0}
   m_SizeDelta: {x: 1536, y: 1024}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &46786764091352340
@@ -715,9 +715,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2237889270602396863, guid: a7c3878680839e34ea6261debf781a65, type: 3}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: Retry
+      - m_Target: {fileID: 1255480106590156217}
+        m_TargetAssemblyTypeName: WinPanel, Assembly-CSharp
+        m_MethodName: Rest
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -805,6 +805,7 @@ GameObject:
   - component: {fileID: 2126088600108010176}
   - component: {fileID: 7860925045209823297}
   - component: {fileID: 4217852451245807881}
+  - component: {fileID: 697947228096823788}
   m_Layer: 5
   m_Name: failPanel
   m_TagString: Untagged
@@ -819,15 +820,15 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2757506225118919137}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 19.68224, y: 10.987684, z: 10.987684}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 2513107823809565275}
   - {fileID: 2583483718944199015}
   - {fileID: 1925774161919189685}
   - {fileID: 4338486719645350747}
-  - {fileID: 2513107823809565275}
   m_Father: {fileID: 7249979280293502763}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -853,7 +854,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -875,6 +876,18 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &697947228096823788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2757506225118919137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efa1c38df8ffd39438c4c2b98a96814b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2818121110273315113
 GameObject:
   m_ObjectHideFlags: 0
@@ -1399,9 +1412,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2237889270602396863, guid: a7c3878680839e34ea6261debf781a65, type: 3}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: Retry
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: WinPanel, Assembly-CSharp
+        m_MethodName: Reset
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1743,7 +1756,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6317426857965241548}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 697947228096823788}
+        m_TargetAssemblyTypeName: WinPanel, Assembly-CSharp
+        m_MethodName: Rest
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7669157100280259356
 GameObject:
   m_ObjectHideFlags: 0
@@ -1966,6 +1991,7 @@ GameObject:
   - component: {fileID: 5561490611680498686}
   - component: {fileID: 5582974128840432223}
   - component: {fileID: 1147767939809123022}
+  - component: {fileID: 1255480106590156217}
   m_Layer: 5
   m_Name: winPanel
   m_TagString: Untagged
@@ -2038,6 +2064,18 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &1255480106590156217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8237669916150533283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efa1c38df8ffd39438c4c2b98a96814b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8309347247917257861
 GameObject:
   m_ObjectHideFlags: 0
@@ -2050,7 +2088,6 @@ GameObject:
   - component: {fileID: 5632386377668270357}
   - component: {fileID: 7239032139813495354}
   - component: {fileID: 7026419104700823134}
-  - component: {fileID: 8028746607361997185}
   - component: {fileID: -5833364188428755080}
   m_Layer: 5
   m_Name: UI
@@ -2074,8 +2111,8 @@ RectTransform:
   - {fileID: 180209153459543024}
   - {fileID: 4855924841069334374}
   - {fileID: 1774696564985640388}
-  - {fileID: 2126088600108010176}
   - {fileID: 5561490611680498686}
+  - {fileID: 2126088600108010176}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2146,21 +2183,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &8028746607361997185
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8309347247917257861}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: efa1c38df8ffd39438c4c2b98a96814b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttons:
-  - {fileID: 3288398111420672090}
-  - {fileID: 7212987813959097993}
 --- !u!95 &-5833364188428755080
 Animator:
   serializedVersion: 7

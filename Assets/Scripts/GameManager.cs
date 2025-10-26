@@ -2,9 +2,12 @@
 using System.Collections.Generic;
 using System.Text;
 using TMPro;
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 [System.Serializable]
 public class ScoreEntry
 {
@@ -94,12 +97,7 @@ public class GameManager : MonoBehaviour
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
-    public void Retry()
-    {
-        Time.timeScale = 1f; // Zamanı tekrar başlat
-        Scene activescene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(activescene.name);
-    }
+  
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
@@ -179,6 +177,17 @@ public class GameManager : MonoBehaviour
 
         Debug.Log($"{knivesToSpawn} adet bıçak spawn edildi!");
     }
+
+    
+        public  void Retry()
+        {
+            if (GUILayout.Button("Retry"))
+            {
+                Time.timeScale = 1f;
+                GameManager.Instance.timer = 0;
+                
+            }
+        }
 
     private void FindUIReferences()
     {
@@ -298,7 +307,7 @@ public class GameManager : MonoBehaviour
 
     private void TogglePause()
     {
-        if (isGameOver) return;
+        if (isGameOver || isWon) return; // Oyun bittiyse pause açılmasın
 
         if (pauseMenu == null)
         {
@@ -357,9 +366,12 @@ public class GameManager : MonoBehaviour
         isGameOver = true;
         isCounting = false;
 
-        Time.timeScale = 0f;
+        // Time.timeScale = 0f; ← BUNU KALDIR
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+
+        // Player ve düşmanları durdur
+        StopGameplay();
 
         int min = Mathf.FloorToInt(timer / 60);
         int secs = Mathf.FloorToInt(timer % 60);
@@ -385,9 +397,12 @@ public class GameManager : MonoBehaviour
         isWon = true;
         isCounting = false;
 
-        Time.timeScale = 0f;
+        // Time.timeScale = 0f; ← BUNU KALDIR
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+
+        // Player ve düşmanları durdur
+        StopGameplay();
 
         SaveBestTime(timer, currentPlayerName);
         DisplayFinalTime();
@@ -403,6 +418,48 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    // YENİ METOT: Oyunu durdur
+    private void StopGameplay()
+    {
+        // Player'ı durdur
+        GameObject player = GameObject.FindWithTag("Player");
+        if (player != null)
+        {
+            // Player'daki hareket scriptlerini devre dışı bırak
+            MonoBehaviour[] playerScripts = player.GetComponents<MonoBehaviour>();
+            foreach (var script in playerScripts)
+            {
+                if (script.GetType().Name != "Transform") // Transform hariç tüm scriptleri kapat
+                {
+                    script.enabled = false;
+                }
+            }
+
+            // Rigidbody varsa durdur
+            Rigidbody rb = player.GetComponent<Rigidbody>();
+            if (rb != null)
+            {
+                rb.linearVelocity = Vector3.zero;
+                rb.angularVelocity = Vector3.zero;
+                rb.isKinematic = true;
+            }
+        }
+
+        // Tüm düşmanları durdur
+        Enemy[] enemies = FindObjectsOfType<Enemy>();
+        foreach (Enemy enemy in enemies)
+        {
+            enemy.enabled = false;
+
+            Rigidbody enemyRb = enemy.GetComponent<Rigidbody>();
+            if (enemyRb != null)
+            {
+                enemyRb.linearVelocity = Vector3.zero;
+                enemyRb.angularVelocity = Vector3.zero;
+                enemyRb.isKinematic = true;
+            }
+        }
+    }
     private void SaveBestTime(float newTime, string playerName)
     {
         BestTimesData data = LoadBestTimes();

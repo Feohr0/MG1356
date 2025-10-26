@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &78207377941705411
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9123804863113181139}
+  m_Layer: 0
+  m_Name: KnifeSpawn (15)
+  m_TagString: KnifeSpawnPoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9123804863113181139
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78207377941705411}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.074072, y: 0.16, z: -6.9109}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 5975951845554507416}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &246421036764621038
 GameObject:
   m_ObjectHideFlags: 0
@@ -155,7 +186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   end1: {fileID: 385050689865350734}
---- !u!1 &774922240787798202
+--- !u!1 &904839945688591758
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -163,26 +194,57 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5263292162070494094}
+  - component: {fileID: 8180042146007212716}
   m_Layer: 0
-  m_Name: KnifeSpawn (8)
+  m_Name: KnifeSpawn (14)
   m_TagString: KnifeSpawnPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5263292162070494094
+--- !u!4 &8180042146007212716
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 774922240787798202}
+  m_GameObject: {fileID: 904839945688591758}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.77, y: 0.16, z: -5.08}
+  m_LocalPosition: {x: -0.025321, y: 0.16, z: 4.4706}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 5975951845554507416}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &930806162784002648
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8750050526409727698}
+  m_Layer: 0
+  m_Name: KnifeSpawn (1)
+  m_TagString: KnifeSpawnPoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8750050526409727698
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 930806162784002648}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.37, y: 0.16, z: 1.17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 5975951845554507416}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -285,37 +347,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &1319160967502068991
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 658544952967345842}
-  m_Layer: 0
-  m_Name: KnifeSpawn (13)
-  m_TagString: KnifeSpawnPoint
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &658544952967345842
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1319160967502068991}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.77, y: 0.16, z: -5.08}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 5975951845554507416}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1952386580451434623
 GameObject:
   m_ObjectHideFlags: 0
@@ -429,40 +460,9 @@ Transform:
   m_GameObject: {fileID: 2301824866604359474}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.137, y: 0.16, z: 2.78}
+  m_LocalPosition: {x: -0.025321, y: 0.16, z: 4.4706}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 5975951845554507416}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2331156299543551037
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4285848399816871570}
-  m_Layer: 0
-  m_Name: KnifeSpawn (14)
-  m_TagString: KnifeSpawnPoint
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4285848399816871570
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2331156299543551037}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.2, y: 0.16, z: 6.776}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 5975951845554507416}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -497,6 +497,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 5975951845554507416}
   m_LocalEulerAnglesHint: {x: 0, y: -90.711, z: 0}
+--- !u!1 &3154357801461058884
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8174830148479596424}
+  m_Layer: 0
+  m_Name: KnifeSpawn (6)
+  m_TagString: KnifeSpawnPoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8174830148479596424
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3154357801461058884}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.15, y: 0.16, z: 1.17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 5975951845554507416}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3390142474435021256
 GameObject:
   m_ObjectHideFlags: 0
@@ -522,7 +553,7 @@ Transform:
   m_GameObject: {fileID: 3390142474435021256}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7114795, z: -0, w: 0.70270693}
-  m_LocalPosition: {x: -1.07, y: 0.01, z: 0.97}
+  m_LocalPosition: {x: -0.369, y: 0.01, z: -2.39}
   m_LocalScale: {x: 0.30173, y: 0.0056809727, z: 0.30173}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -729,13 +760,13 @@ Transform:
   m_GameObject: {fileID: 4501143367339390833}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.137, y: 0.16, z: 2.78}
+  m_LocalPosition: {x: -0.025321, y: 0.16, z: 4.4706}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 5975951845554507416}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &4850175460900979613
+--- !u!1 &4913629580180715038
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -743,57 +774,26 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 803728814942560315}
+  - component: {fileID: 3125345608467128592}
   m_Layer: 0
-  m_Name: KnifeSpawn (3)
+  m_Name: KnifeSpawn (11)
   m_TagString: KnifeSpawnPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &803728814942560315
+--- !u!4 &3125345608467128592
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4850175460900979613}
+  m_GameObject: {fileID: 4913629580180715038}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.77, y: 0.16, z: -5.08}
+  m_LocalPosition: {x: 2.55, y: 0.16, z: 1.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 5975951845554507416}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &5033526096970503736
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5317164035998497558}
-  m_Layer: 0
-  m_Name: KnifeSpawn (4)
-  m_TagString: KnifeSpawnPoint
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5317164035998497558
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5033526096970503736}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.2, y: 0.16, z: 6.776}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 5975951845554507416}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -822,9 +822,9 @@ Transform:
   m_GameObject: {fileID: 5283478932771974100}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.137, y: 0.16, z: 2.78}
+  m_LocalPosition: {x: -0.025321, y: 0.16, z: 4.4706}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 5975951845554507416}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1055,6 +1055,37 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &5885080695736775640
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4736092316051196814}
+  m_Layer: 0
+  m_Name: KnifeSpawn (17)
+  m_TagString: KnifeSpawnPoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4736092316051196814
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5885080695736775640}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.074072, y: 0.16, z: -6.9109}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 5975951845554507416}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5928521073030482800
 GameObject:
   m_ObjectHideFlags: 0
@@ -1168,9 +1199,40 @@ Transform:
   m_GameObject: {fileID: 5958524554528098358}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.111, y: 0.16, z: -3.29}
+  m_LocalPosition: {x: -0.074072, y: 0.16, z: -6.9109}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 5975951845554507416}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6128725342724573632
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4458245690013452945}
+  m_Layer: 0
+  m_Name: KnifeSpawn (4)
+  m_TagString: KnifeSpawnPoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4458245690013452945
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6128725342724573632}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.55, y: 0.16, z: 1.3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 5975951845554507416}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1282,37 +1344,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.9999996, y: 0.72254765, z: 2.0000002}
   m_Center: {x: 0.00000018067655, y: 0.118083626, z: 0.000000059604638}
---- !u!1 &6275139645857793072
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7917750929806966650}
-  m_Layer: 0
-  m_Name: KnifeSpawn (6)
-  m_TagString: KnifeSpawnPoint
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7917750929806966650
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6275139645857793072}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.555, y: 0.16, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 5975951845554507416}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6957708956494021304
 GameObject:
   m_ObjectHideFlags: 0
@@ -1436,13 +1467,13 @@ Transform:
   m_GameObject: {fileID: 7346867651014187546}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.111, y: 0.16, z: -3.29}
+  m_LocalPosition: {x: -0.074072, y: 0.16, z: -6.9109}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 5975951845554507416}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &7484826685409609083
+--- !u!1 &7471089977497629674
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1450,26 +1481,88 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5723647164396090972}
+  - component: {fileID: 7746900506876485280}
   m_Layer: 0
-  m_Name: KnifeSpawn (11)
+  m_Name: KnifeSpawn (9)
   m_TagString: KnifeSpawnPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5723647164396090972
+--- !u!4 &7746900506876485280
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7484826685409609083}
+  m_GameObject: {fileID: 7471089977497629674}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.555, y: 0.16, z: 0}
+  m_LocalPosition: {x: -7.37, y: 0.16, z: 1.17}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 5975951845554507416}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7503085760707221136
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 26936402179024189}
+  m_Layer: 0
+  m_Name: KnifeSpawn (18)
+  m_TagString: KnifeSpawnPoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &26936402179024189
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7503085760707221136}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.025321, y: 0.16, z: 4.4706}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 5975951845554507416}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7508472622602865167
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4852892930105328434}
+  m_Layer: 0
+  m_Name: KnifeSpawn (13)
+  m_TagString: KnifeSpawnPoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4852892930105328434
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7508472622602865167}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.15, y: 0.16, z: 1.17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 5975951845554507416}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1498,13 +1591,13 @@ Transform:
   m_GameObject: {fileID: 7942360219652659916}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.111, y: 0.16, z: -3.29}
+  m_LocalPosition: {x: -0.074072, y: 0.16, z: -6.9109}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 5975951845554507416}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &8860062861239909977
+--- !u!1 &8012629904107051382
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1512,26 +1605,88 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4770451846854856245}
+  - component: {fileID: 6827058492667603493}
   m_Layer: 0
-  m_Name: KnifeSpawn (1)
+  m_Name: KnifeSpawn (8)
   m_TagString: KnifeSpawnPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4770451846854856245
+--- !u!4 &6827058492667603493
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8860062861239909977}
+  m_GameObject: {fileID: 8012629904107051382}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.555, y: 0.16, z: 0}
+  m_LocalPosition: {x: 2.55, y: 0.16, z: 4.66}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 5975951845554507416}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8497776157724128224
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2887053620330358165}
+  m_Layer: 0
+  m_Name: KnifeSpawn (3)
+  m_TagString: KnifeSpawnPoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2887053620330358165
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8497776157724128224}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.55, y: 0.16, z: 4.66}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 5975951845554507416}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8549021293732498479
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7106270025544351839}
+  m_Layer: 0
+  m_Name: KnifeSpawn (16)
+  m_TagString: KnifeSpawnPoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7106270025544351839
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8549021293732498479}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.025321, y: 0.16, z: 4.4706}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 5975951845554507416}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1754,43 +1909,58 @@ PrefabInstance:
       addedObject: {fileID: 5245989614970716981}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: c5d8d325a9ccaed48ac54c2ee0a733df, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 4770451846854856245}
+      addedObject: {fileID: 2887053620330358165}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: c5d8d325a9ccaed48ac54c2ee0a733df, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8750050526409727698}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: c5d8d325a9ccaed48ac54c2ee0a733df, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4458245690013452945}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: c5d8d325a9ccaed48ac54c2ee0a733df, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8174830148479596424}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: c5d8d325a9ccaed48ac54c2ee0a733df, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2321321067364148986}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: c5d8d325a9ccaed48ac54c2ee0a733df, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 803728814942560315}
-    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: c5d8d325a9ccaed48ac54c2ee0a733df, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 5317164035998497558}
-    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: c5d8d325a9ccaed48ac54c2ee0a733df, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 6763976040187840659}
-    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: c5d8d325a9ccaed48ac54c2ee0a733df, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 7917750929806966650}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: c5d8d325a9ccaed48ac54c2ee0a733df, type: 3}
       insertIndex: -1
       addedObject: {fileID: 349863462027021177}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: c5d8d325a9ccaed48ac54c2ee0a733df, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5263292162070494094}
-    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: c5d8d325a9ccaed48ac54c2ee0a733df, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 8984627272325175749}
-    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: c5d8d325a9ccaed48ac54c2ee0a733df, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 5723647164396090972}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: c5d8d325a9ccaed48ac54c2ee0a733df, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1920457070386094681}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: c5d8d325a9ccaed48ac54c2ee0a733df, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 658544952967345842}
+      addedObject: {fileID: 6827058492667603493}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: c5d8d325a9ccaed48ac54c2ee0a733df, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 4285848399816871570}
+      addedObject: {fileID: 7746900506876485280}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: c5d8d325a9ccaed48ac54c2ee0a733df, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3125345608467128592}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: c5d8d325a9ccaed48ac54c2ee0a733df, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4852892930105328434}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: c5d8d325a9ccaed48ac54c2ee0a733df, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8180042146007212716}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: c5d8d325a9ccaed48ac54c2ee0a733df, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9123804863113181139}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: c5d8d325a9ccaed48ac54c2ee0a733df, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7106270025544351839}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: c5d8d325a9ccaed48ac54c2ee0a733df, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4736092316051196814}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: c5d8d325a9ccaed48ac54c2ee0a733df, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 26936402179024189}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 8134837689134937748, guid: c5d8d325a9ccaed48ac54c2ee0a733df, type: 3}
       insertIndex: -1
