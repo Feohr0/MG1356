@@ -51,9 +51,9 @@ MonoBehaviour:
   winPanel: {fileID: 0}
   finalTimeText: {fileID: 0}
   bestTimesText: {fileID: 0}
-  forestFactory: {fileID: 0}
-  desertFactory: {fileID: 0}
-  winterFactory: {fileID: 0}
+  forestFactory: {fileID: 11400000, guid: b18b9a98f78d545408e78f96880dad94, type: 2}
+  desertFactory: {fileID: 11400000, guid: e55277e7fecc0444fb82276c9ec6d31e, type: 2}
+  winterFactory: {fileID: 11400000, guid: e3d16f5885540de448114c357a3255be, type: 2}
   enemyPrefabs:
   - {fileID: -2668195230670137389, guid: f9794e575fe27c04c94ea7b7e46f30c7, type: 3}
   - {fileID: 5292912510534434163, guid: 2d0223df0490db444a14a97d721d473c, type: 3}
