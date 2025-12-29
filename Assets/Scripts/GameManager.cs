@@ -5,10 +5,7 @@ using TMPro;
 
 using UnityEngine;
 using UnityEngine.SceneManagement;
-#if UNITY_EDITOR
-using UnityEditor;
-#endif
-[System.Serializable]
+
 public class ScoreEntry
 {
     public string playerName;
